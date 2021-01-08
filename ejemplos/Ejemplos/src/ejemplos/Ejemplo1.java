@@ -16,7 +16,8 @@ public class Ejemplo1 {
      */
     public static void main(String[] args) {
         // 
-        int[] informacion = {10, 20, 30, 40, 50, 100};
+        int[] informacion = {10, 20, 30, 40, 50, 100, 1, 156, 332};
+        // int suma = obtenerSumaDatos(10);
         int suma = obtenerSumaDatos(informacion);
         double promedio = obtenerPromedioDatos(informacion);
         System.out.printf("La suma es %d\n", suma);
