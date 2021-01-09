@@ -20,12 +20,14 @@ public class Problema1 {
     /**
      * @param args the command line arguments
      */
+    // Se define la función inicial
     public static void main(String[] args) {
         // TODO code application logic here
         int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
+        // Se llama al procedicimiento imprimirValores y se le envia un arreglo
         imprimirValores(informacion);
     }
-    
+    // Se define el procedimiento Para imprimir los valores
     public static void imprimirValores (int[][] valores){
         String cadena = "";
         for (int fila = 0; fila < valores.length; fila++){

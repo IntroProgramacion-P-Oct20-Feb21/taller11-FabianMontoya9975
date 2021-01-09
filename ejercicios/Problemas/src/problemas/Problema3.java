@@ -24,6 +24,7 @@ public class Problema3 {
     /**
      * @param args the command line arguments
      */
+    // Se define la función inicial
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
@@ -40,16 +41,19 @@ public class Problema3 {
         nota3 = entrada.nextDouble();
         System.out.println("Ingresar nota 4: ");
         nota4 = entrada.nextDouble();
+        // a la variable notaCualitativa se le asigna el valor que retorna
+        // la función obtenerPromedio
         notaCualitativa = obtenerPromedio(nota1, nota2, nota3, nota4);
         System.out.printf("El promedio de las notas: %.1f, %.1f, %.1f, "
                 + "%.1f es %s\n",
                 nota1, nota2, nota3, nota4, notaCualitativa);
     }
-
+    // Se define la función para obtener el promedio cualitativo
     public static String obtenerPromedio(double a, double b,
             double c, double d) {
         double promedio;
         String promedioCualitativo = "";
+        // Se calcula el promedio con las notas ingresadas
         promedio = (a + b + c + d) / 4;
         if ((promedio >= 0) && (promedio <= 5)) {
             promedioCualitativo = "Regular";
@@ -66,6 +70,7 @@ public class Problema3 {
                 }
             }
         }
+        // se retorna una cadena
         return promedioCualitativo;
     }
 

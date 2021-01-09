@@ -33,6 +33,7 @@ public class Problema4 {
     /**
      * @param args the command line arguments
      */
+    // Se define la función inicial
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada=new Scanner(System.in);
@@ -43,14 +44,16 @@ public class Problema4 {
         opcion = entrada.nextInt();
         switch (opcion) {
             case 1:
+                // Se llama al procedimiento calcularValorLuz
                 calcularValorLuz();
                 break;
             case 2:
+                // Se llama al procedimiento calcularPredio
                 calcularPredio();
                 break;
         }
     }
-    
+    //Se define el procedimiento para calcular el costo de la planilla de luz
     public static void calcularValorLuz() {
         Scanner entrada=new Scanner(System.in);
         String nombre;
@@ -66,12 +69,13 @@ public class Problema4 {
         valorKilovatios = entrada.nextDouble();
         System.out.println("Ingresar el número de kilovatios consumidos: ");
         kilovatiosMes = entrada.nextDouble();
+        // se calcula el valor de la planilla de luz
         valorPanilla = valorKilovatios * kilovatiosMes;
         System.out.printf("Cliente %s con cédula %s debe cancelar el "
                 + "valor de $%.2f\n",
                 nombre, cedula, valorPanilla);
     }
-    
+    // Se define el procedimiento para calcular el predio del inmueble
     public static void calcularPredio() {
         Scanner entrada=new Scanner(System.in);
         String nombre;
@@ -84,6 +88,7 @@ public class Problema4 {
         cedula = entrada.nextLine();
         System.out.println("Ingresar el valor del inmueble: ");
         inmueble = entrada.nextDouble();
+        // Se calcula el valor del predio a pagar
         total = inmueble * 0.2;
         System.out.printf("Cliente %s con cédula %s tiene un bien inmueble "
                 + "valorado en $%.2f y tiene que pagar de predio $%.2f\n",
